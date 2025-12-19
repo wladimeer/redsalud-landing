@@ -15,15 +15,6 @@ Está optimizada para una visualización correcta en desktop, tablet y mobile, u
 - **Google Fonts (Inter)**
 - **JavaScript (configuración Tailwind)**
 
-## 📁 Estructura básica del proyecto
-
-/
-├── index.html
-├── css/
-│   └── styles.css
-├── assets/
-│   └── images/
-
 ## ✨ Características destacadas
 
 - Diseño responsive (mobile-first)
@@ -35,7 +26,6 @@ Está optimizada para una visualización correcta en desktop, tablet y mobile, u
 ## ▶️ Cómo ejecutar el proyecto
 
 1. Descargar o clonar el proyecto
-2. Abrir `index.html` en el navegador  
-   o usar Live Server en VS Code
+2. Abrir `index.html` en el navegador o usar Live Server en VS Code
 
 No requiere instalación adicional.
