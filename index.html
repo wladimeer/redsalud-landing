@@ -32,128 +32,166 @@
     <header class="bg-white border-b sticky top-0 z-50">
       <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <img src="assets/images/redsalud-logo.svg" alt="RedSalud" class="h-10" />
-        <div class="flex gap-4">
-          <a href="#plans" class="btn-primary">Ver planes</a>
-        </div>
+        <a href="#plans" class="btn-primary">Ver planes</a>
       </div>
     </header>
 
-    <section class="bg-redsaludLight py-24">
-      <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+    <section class="bg-white border-b">
+      <div class="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-12 items-center">
         <div>
-          <h1 class="text-4xl md:text-5xl font-bold text-redsaludBlue mb-6">
-            Seguro Dental con bonificación 100% en línea
+          <span class="text-sm uppercase tracking-wide text-redsaludGreen font-semibold">
+            Seguro Dental RedSalud
+          </span>
+
+          <h1 class="mt-3 text-4xl font-bold text-redsaludBlue leading-tight">
+            Seguro dental con bonificación 100% en línea
           </h1>
 
-          <p class="text-lg text-redsaludGray mb-8">
-            Atención dental con cobertura en toda la red de clínicas y centros dentales, con acceso
-            rápido y sin trámites complicados.
+          <p class="mt-6 text-base text-gray-600 max-w-xl">
+            Producto de RedSalud diseñado para facilitar el acceso a atención dental, con cobertura
+            inmediata, bonificación automática y atención en nuestra red de clínicas dentales a lo
+            largo del país.
           </p>
 
-          <div class="flex gap-4">
-            <a href="#plans" class="btn-primary">Contratar ahora</a>
+          <div class="mt-8 flex gap-4">
+            <a href="#plans" class="btn-primary">Contratar seguro</a>
             <a href="#how-it-works" class="btn-outline">Cómo funciona</a>
           </div>
         </div>
 
         <img
           src="assets/images/hero-dental.webp"
-          alt="Seguro Dental"
-          class="w-full lg:max-w-lg mx-auto rounded-lg shadow-lg"
+          alt="Atención dental RedSalud"
+          class="w-full rounded-md"
           loading="lazy"
           decoding="async"
         />
       </div>
     </section>
 
-    <section class="py-20">
+    <section class="bg-redsaludLight py-20">
       <div class="max-w-7xl mx-auto px-6">
-        <h2 class="section-title text-center">¿Por qué elegir este seguro?</h2>
+        <h2 class="section-title">¿Por qué elegir este seguro dental?</h2>
 
-        <div class="grid md:grid-cols-3 gap-10 mt-16">
-          <div class="card text-center">
-            <div class="text-4xl mb-3">🦷</div>
-            <h3 class="card-title text-redsaludGreen font-bold">Cobertura en toda la red</h3>
-            <p class="text-redsaludGray">
-              Red de clínicas y centros dentales en todo Chile disponibles para ti.
+        <p class="text-sm text-gray-500 max-w-2xl mb-12">
+          El Seguro Dental RedSalud se integra directamente con nuestra red de atención, ofreciendo
+          una experiencia simple, transparente y sin trámites adicionales.
+        </p>
+
+        <div class="grid md:grid-cols-3 gap-12">
+          <div>
+            <h3 class="font-semibold text-redsaludBlue mb-2">Atención en toda la red RedSalud</h3>
+            <p class="text-gray-600">
+              Accede a clínicas y centros dentales RedSalud a lo largo del país, manteniendo las
+              mismas condiciones de cobertura.
             </p>
           </div>
 
-          <div class="card text-center">
-            <div class="text-4xl mb-3">💼</div>
-            <h3 class="card-title text-redsaludGreen font-bold">Sin trámites complejos</h3>
-            <p class="text-redsaludGray">
-              Contrata y usa tu seguro dental de forma simple y en línea.
+          <div>
+            <h3 class="font-semibold text-redsaludBlue mb-2">Bonificación inmediata en línea</h3>
+            <p class="text-gray-600">
+              El copago se calcula y aplica directamente al momento de tu atención, sin reembolsos
+              ni gestiones posteriores.
             </p>
           </div>
 
-          <div class="card text-center">
-            <div class="text-4xl mb-3">📆</div>
-            <h3 class="card-title text-redsaludGreen font-bold">Reserva tu atención</h3>
-            <p class="text-redsaludGray">
-              Puedes agendar hora directamente en la plataforma de RedSalud.
+          <div>
+            <h3 class="font-semibold text-redsaludBlue mb-2">Atención sin trámites</h3>
+            <p class="text-gray-600">
+              Todo el proceso está integrado con los sistemas RedSalud, permitiendo una experiencia
+              fluida y sin papeleos.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="plans" class="bg-redsaludLight py-24">
+    <section id="plans" class="py-24 bg-white">
       <div class="max-w-7xl mx-auto px-6">
-        <h2 class="section-title text-center">Planes disponibles</h2>
+        <h2 class="section-title text-center mb-16">Planes disponibles</h2>
 
-        <div class="grid md:grid-cols-3 gap-8 mt-16">
-          <div class="plan-card flex flex-col">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="plan-card">
             <h3 class="plan-title">Vital Base</h3>
-            <ul class="plan-list">
-              <li>Consultas generales</li>
+            <p class="text-gray-600 mb-4">Plan orientado a atenciones preventivas y de urgencia.</p>
+            <ul class="plan-list mb-6">
+              <li>Consultas dentales</li>
               <li>Urgencias</li>
               <li>Radiografías</li>
             </ul>
-            <p class="plan-price">Desde $9.990/mes</p>
-            <a href="#cotizar" class="btn-primary mt-auto">Contratar</a>
+            <p class="plan-price">Desde $9.990 / mes</p>
+            <a href="#" class="btn-primary mt-4 inline-block">Contratar ahora</a>
           </div>
 
-          <div class="plan-card featured flex flex-col">
+          <div class="plan-card featured">
             <h3 class="plan-title">Vital Care</h3>
-            <ul class="plan-list">
-              <li>Todo lo anterior</li>
+            <p class="text-gray-600 mb-4">Mayor cobertura para tratamientos frecuentes.</p>
+            <ul class="plan-list mb-6">
+              <li>Todo Vital Base</li>
               <li>Limpiezas</li>
               <li>Tratamientos restaurativos</li>
             </ul>
-            <p class="plan-price">Desde $14.990/mes</p>
-            <a href="#cotizar" class="btn-primary mt-auto">Contratar</a>
+            <p class="plan-price">Desde $14.990 / mes</p>
+            <a href="#" class="btn-primary mt-4 inline-block">Contratar ahora</a>
           </div>
 
-          <div class="plan-card flex flex-col">
+          <div class="plan-card">
             <h3 class="plan-title">Vital Plus</h3>
-            <ul class="plan-list">
-              <li>Cobertura integral</li>
-              <li>Especialidades</li>
+            <p class="text-gray-600 mb-4">Cobertura integral y acceso a especialidades.</p>
+            <ul class="plan-list mb-6">
+              <li>Cobertura ampliada</li>
+              <li>Especialidades dentales</li>
               <li>Atención prioritaria</li>
             </ul>
-            <p class="plan-price">Desde $19.990/mes</p>
-            <a href="#cotizar" class="btn-primary mt-auto">Contratar</a>
+            <p class="plan-price">Desde $19.990 / mes</p>
+            <a href="#" class="btn-primary mt-4 inline-block">Contratar ahora</a>
           </div>
         </div>
+
+        <p class="text-xs text-gray-500 mt-10 text-center max-w-3xl mx-auto">
+          Los precios y coberturas pueden variar según condiciones del plan. Revisa el detalle de
+          prestaciones y topes antes de contratar.
+        </p>
       </div>
     </section>
 
-    <section id="how-it-works" class="py-24">
-      <div class="max-w-7xl mx-auto px-6 text-center">
-        <h2 class="section-title">¿Cómo usar tu seguro dental?</h2>
+    <section id="how-it-works" class="bg-redsaludLight py-20">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="section-title mb-12">¿Cómo usar tu seguro dental?</h2>
 
-        <div class="grid md:grid-cols-3 gap-10 mt-10">
-          <div class="card step-text">📲 Contrata en línea</div>
-          <div class="card step-text">🏥 Asiste a tu atención dental</div>
-          <div class="card step-text">😊 Bonificación automática copago</div>
+        <div class="grid md:grid-cols-3 gap-10">
+          <div>
+            <span class="text-redsaludGreen font-bold">01</span>
+            <p class="mt-2 text-gray-600">Contrata tu seguro dental de forma 100% en línea.</p>
+          </div>
+
+          <div>
+            <span class="text-redsaludGreen font-bold">02</span>
+            <p class="mt-2 text-gray-600">
+              Asiste a tu atención en cualquier clínica dental RedSalud.
+            </p>
+          </div>
+
+          <div>
+            <span class="text-redsaludGreen font-bold">03</span>
+            <p class="mt-2 text-gray-600">Paga solo el copago correspondiente según tu plan.</p>
+          </div>
         </div>
+
+        <p class="mt-10 text-sm text-gray-500 max-w-2xl">
+          Todo el proceso está integrado con los sistemas de RedSalud, permitiendo una experiencia
+          simple, transparente y sin trámites adicionales.
+        </p>
       </div>
     </section>
 
     <section class="py-24">
       <div class="max-w-4xl mx-auto px-6">
         <h2 class="section-title text-center">Preguntas frecuentes</h2>
+
+        <p class="text-center text-gray-500 max-w-2xl mx-auto mt-4">
+          Resolvemos las principales dudas sobre el funcionamiento del Seguro Dental RedSalud.
+        </p>
 
         <div class="mt-12 space-y-4">
           <details class="faq">
@@ -222,6 +260,17 @@
             </p>
           </details>
         </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-16 border-t">
+      <div class="max-w-5xl mx-auto px-6 text-center">
+        <h2 class="section-title">Un producto respaldado por RedSalud</h2>
+        <p class="mt-4 text-gray-600">
+          RedSalud es una de las principales redes de salud del país, con presencia nacional y altos
+          estándares de calidad clínica, comprometida con entregar una atención cercana, oportuna y
+          segura.
+        </p>
       </div>
     </section>
 
