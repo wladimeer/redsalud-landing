@@ -4,27 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Seguro Dental RedSalud</title>
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="icon" href="assets/images/favicon.ico" />
 
     <script src="https://cdn.tailwindcss.com"></script>
-
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
-              secondary: '#1E3A8A',
-              muted: '#F7F8FA'
+              redsaludBlue: '#1E3A8A',
+              redsaludGreen: '#009999',
+              redsaludLight: '#F7F8FA',
+              redsaludGray: '#6B7280'
             },
             fontFamily: {
-              sans: ['Inter', 'sans-serif']
+              sans: ['Open Sans', 'sans-serif']
             }
           }
         }
@@ -34,36 +28,31 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
-  <body class="font-sans text-gray-700 bg-white">
-    <header class="sticky top-0 z-50 bg-white border-b">
+  <body class="bg-redsaludLight text-gray-800 font-sans">
+    <header class="bg-white border-b sticky top-0 z-50">
       <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <img
-          src="assets/images/redsalud-logo.svg"
-          alt="RedSalud"
-          class="h-9"
-          loading="lazy"
-          decoding="async"
-        />
-
-        <a href="#planes" class="btn-primary btn-sm">Contratar</a>
+        <img src="assets/images/redsalud-logo.svg" alt="RedSalud" class="h-10" />
+        <div class="flex gap-4">
+          <a href="#plans" class="btn-primary">Ver planes</a>
+        </div>
       </div>
     </header>
 
-    <section class="bg-muted">
-      <div class="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-14 items-center">
+    <section class="bg-redsaludLight py-24">
+      <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
         <div>
-          <h1 class="text-4xl md:text-5xl font-bold text-secondary leading-tight mb-6">
+          <h1 class="text-4xl md:text-5xl font-bold text-redsaludBlue mb-6">
             Seguro Dental con bonificación 100% en línea
           </h1>
 
-          <p class="text-lg mb-10 max-w-xl">
-            Atención dental sin trámites, paga solo el copago y accede a la red RedSalud en todo
-            Chile.
+          <p class="text-lg text-redsaludGray mb-8">
+            Atención dental con cobertura en toda la red de clínicas y centros dentales, con acceso
+            rápido y sin trámites complicados.
           </p>
 
           <div class="flex gap-4">
-            <a href="#planes" class="btn-primary">Ver planes</a>
-            <a href="#como-funciona" class="btn-outline">Cómo funciona</a>
+            <a href="#plans" class="btn-primary">Contratar ahora</a>
+            <a href="#how-it-works" class="btn-outline">Cómo funciona</a>
           </div>
         </div>
 
@@ -77,114 +66,92 @@
       </div>
     </section>
 
-    <section class="py-24">
+    <section class="py-20">
       <div class="max-w-7xl mx-auto px-6">
         <h2 class="section-title text-center">¿Por qué elegir este seguro?</h2>
 
         <div class="grid md:grid-cols-3 gap-10 mt-16">
-          <div class="card">
-            <span class="small-icon benefit-icon">⚡</span>
-            <h3 class="card-title">Bonificación inmediata</h3>
-            <p>
-              El deducible se aplica automáticamente en línea, sin esperas ni gestiones adicionales.
+          <div class="card text-center">
+            <div class="text-4xl mb-3">🦷</div>
+            <h3 class="card-title text-redsaludGreen font-bold">Cobertura en toda la red</h3>
+            <p class="text-redsaludGray">
+              Red de clínicas y centros dentales en todo Chile disponibles para ti.
             </p>
           </div>
 
-          <div class="card">
-            <span class="small-icon benefit-icon">💳</span>
-            <h3 class="card-title">Paga solo el copago</h3>
-            <p>
-              Accede a tu atención dental pagando únicamente el copago, sin trámites ni solicitudes
-              posteriores.
+          <div class="card text-center">
+            <div class="text-4xl mb-3">💼</div>
+            <h3 class="card-title text-redsaludGreen font-bold">Sin trámites complejos</h3>
+            <p class="text-redsaludGray">
+              Contrata y usa tu seguro dental de forma simple y en línea.
             </p>
           </div>
 
-          <div class="card">
-            <span class="small-icon benefit-icon">🏥</span>
-            <h3 class="card-title">Red RedSalud</h3>
-            <p>
-              Atiéndete con especialistas y clínicas de la red RedSalud, disponibles a lo largo de
-              todo Chile.
+          <div class="card text-center">
+            <div class="text-4xl mb-3">📆</div>
+            <h3 class="card-title text-redsaludGreen font-bold">Reserva tu atención</h3>
+            <p class="text-redsaludGray">
+              Puedes agendar hora directamente en la plataforma de RedSalud.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="planes" class="bg-muted py-24">
+    <section id="plans" class="bg-redsaludLight py-24">
       <div class="max-w-7xl mx-auto px-6">
         <h2 class="section-title text-center">Planes disponibles</h2>
 
-        <div class="grid md:grid-cols-3 gap-10 mt-16">
+        <div class="grid md:grid-cols-3 gap-8 mt-16">
           <div class="plan-card flex flex-col">
-            <img src="assets/images/plan-base.webp" class="plan-image" loading="lazy" />
             <h3 class="plan-title">Vital Base</h3>
             <ul class="plan-list">
               <li>Consultas generales</li>
-              <li>Urgencias dentales</li>
+              <li>Urgencias</li>
               <li>Radiografías</li>
             </ul>
-            <p class="plan-price">Desde $9.990 / mes</p>
-            <button class="btn-secondary mt-auto mt-6">Contratar</button>
+            <p class="plan-price">Desde $9.990/mes</p>
+            <a href="#cotizar" class="btn-primary mt-auto">Contratar</a>
           </div>
 
           <div class="plan-card featured flex flex-col">
-            <img src="assets/images/plan-care.webp" class="plan-image" loading="lazy" />
             <h3 class="plan-title">Vital Care</h3>
             <ul class="plan-list">
               <li>Todo lo anterior</li>
-              <li>Limpiezas dentales</li>
+              <li>Limpiezas</li>
               <li>Tratamientos restaurativos</li>
             </ul>
-            <p class="plan-price">Desde $14.990 / mes</p>
-            <button class="btn-primary mt-auto">Contratar</button>
+            <p class="plan-price">Desde $14.990/mes</p>
+            <a href="#cotizar" class="btn-primary mt-auto">Contratar</a>
           </div>
 
           <div class="plan-card flex flex-col">
-            <img src="assets/images/plan-plus.webp" class="plan-image" loading="lazy" />
             <h3 class="plan-title">Vital Plus</h3>
             <ul class="plan-list">
               <li>Cobertura integral</li>
               <li>Especialidades</li>
-              <li>Agenda preferente</li>
+              <li>Atención prioritaria</li>
             </ul>
-            <p class="plan-price">Desde $19.990 / mes</p>
-            <button class="btn-secondary mt-auto mt-6">Contratar</button>
+            <p class="plan-price">Desde $19.990/mes</p>
+            <a href="#cotizar" class="btn-primary mt-auto">Contratar</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="como-funciona" class="py-24">
+    <section id="how-it-works" class="py-24">
       <div class="max-w-7xl mx-auto px-6 text-center">
-        <h2 class="section-title">¿Cómo usar tu seguro?</h2>
+        <h2 class="section-title">¿Cómo usar tu seguro dental?</h2>
 
-        <div class="grid md:grid-cols-3 gap-10 mt-16">
-          <div class="card step-text">
-            <p>
-              <span class="small-icon step-icon">📑</span>
-              Contrata tu seguro en línea
-            </p>
-          </div>
-
-          <div class="card step-text">
-            <p>
-              <span class="small-icon step-icon">🏢</span>
-              Asiste a tu atención dental
-            </p>
-          </div>
-
-          <div class="card step-text">
-            <p>
-              <span class="small-icon step-icon">✅</span>
-              Bonificación automática copago
-            </p>
-          </div>
+        <div class="grid md:grid-cols-3 gap-10 mt-10">
+          <div class="card step-text">📲 Contrata en línea</div>
+          <div class="card step-text">🏥 Asiste a tu atención dental</div>
+          <div class="card step-text">😊 Bonificación automática copago</div>
         </div>
       </div>
     </section>
 
-    <section class="bg-muted py-24">
+    <section class="py-24">
       <div class="max-w-4xl mx-auto px-6">
         <h2 class="section-title text-center">Preguntas frecuentes</h2>
 
@@ -192,59 +159,217 @@
           <details class="faq">
             <summary>¿Desde cuándo puedo usar el seguro?</summary>
             <p>
-              El seguro se activa al instante tras la contratación y puedes usarlo el mismo día.
+              El seguro se activa de forma inmediata una vez que finalizas el proceso de
+              contratación y se confirma el pago. No existen periodos de carencia, por lo que puedes
+              utilizar tus beneficios desde el mismo día, accediendo a atención dental en la red
+              RedSalud según las coberturas de tu plan.
             </p>
           </details>
 
           <details class="faq">
             <summary>¿Debo realizar trámites para la bonificación?</summary>
-            <p>No, la bonificación se aplica automáticamente al momento de tu atención dental.</p>
+            <p>
+              No es necesario realizar trámites adicionales ni gestiones posteriores. La
+              bonificación se aplica automáticamente al momento de tu atención dental, ya que el
+              sistema reconoce tu seguro de forma directa en la clínica, permitiéndote acceder al
+              beneficio sin papeleos ni reembolsos.
+            </p>
           </details>
 
           <details class="faq">
             <summary>¿Qué monto debo pagar en la atención?</summary>
-            <p>Solo pagas el copago correspondiente según tu plan, sin reembolsos posteriores.</p>
+            <p>
+              Solo debes pagar el copago correspondiente según el plan contratado y la prestación
+              realizada. El descuento se aplica de inmediato sobre el valor de la atención, por lo
+              que no tendrás que adelantar dinero ni solicitar devoluciones posteriormente.
+            </p>
           </details>
 
           <details class="faq">
             <summary>¿Puedo atenderme en cualquier clínica RedSalud?</summary>
-            <p>Sí, el seguro es válido en toda la red de clínicas y centros dentales RedSalud.</p>
+            <p>
+              Sí, el seguro es válido en toda la red de clínicas y centros dentales RedSalud a lo
+              largo del país. Esto te permite elegir el centro más conveniente según tu ubicación,
+              manteniendo siempre las mismas condiciones y beneficios de tu plan.
+            </p>
           </details>
 
           <details class="faq">
             <summary>¿El seguro cubre especialidades dentales?</summary>
-            <p>Dependiendo del plan, accedes a especialidades como endodoncia y rehabilitación.</p>
+            <p>
+              Dependiendo del plan que contrates, puedes acceder a diversas especialidades dentales,
+              como endodoncia, rehabilitación oral, periodoncia y otros tratamientos. Las coberturas
+              específicas y topes asociados están detallados en las condiciones de cada plan.
+            </p>
           </details>
 
           <details class="faq">
             <summary>¿Puedo usar el seguro más de una vez al mes?</summary>
-            <p>Sí, puedes usarlo todas las veces que lo necesites según las coberturas del plan.</p>
+            <p>
+              Sí, puedes utilizar el seguro todas las veces que lo necesites durante el mes, siempre
+              que las prestaciones estén contempladas dentro de tu plan. No existe un límite mensual
+              de atenciones, sino límites definidos por tipo de tratamiento y cobertura anual.
+            </p>
           </details>
 
           <details class="faq">
             <summary>¿Cómo contrato el seguro?</summary>
-            <p>La contratación es 100% en línea y toma solo unos minutos desde esta página.</p>
+            <p>
+              La contratación es 100% en línea, simple y rápida. Solo debes completar tus datos en
+              esta página, seleccionar el plan que mejor se adapte a tus necesidades y realizar el
+              pago de forma segura. Todo el proceso toma solo unos minutos y recibirás la
+              confirmación de tu seguro de manera inmediata.
+            </p>
           </details>
         </div>
       </div>
     </section>
 
-    <footer class="bg-secondary text-white py-12">
-      <div
-        class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center md:justify-between gap-8"
-      >
-        <div class="text-center md:text-left text-sm">
-          <p class="font-medium">Contacto</p>
-          <p class="opacity-80 mt-1">600 123 4567 · contacto@redsalud.cl</p>
+    <footer class="bg-redsaludGreen text-white py-6">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-10 text-sm">
+          <div class="hidden md:block">
+            <img src="assets/images/redsalud-white-logo.svg" alt="RedSalud" class="h-10 mb-4" />
+          </div>
+
+          <div>
+            <span class="footer-title">Acerca de RedSalud</span>
+            <ul class="footer-nav-list">
+              <li>
+                <a
+                  href="https://www.redsalud.cl/acerca-de-redsalud/quienes-somos"
+                  class="footer-link"
+                  target="_blank"
+                  >Quiénes somos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.redsalud.cl/acerca-de-redsalud/inversionistas"
+                  class="footer-link"
+                  target="_blank"
+                  >Inversionistas</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.redsalud.cl/acerca-de-redsalud/sostenibilidad-redsalud"
+                  class="footer-link"
+                  target="_blank"
+                  >Sostenibilidad</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.redsalud.cl/acerca-de-redsalud/indicadores-clinicos-redsalud"
+                  class="footer-link"
+                  target="_blank"
+                  >Indicadores de calidad</a
+                >
+              </li>
+              <li>
+                <a href="https://redsalud.trabajando.cl/" class="footer-link" target="_blank"
+                  >Trabaja con nosotros</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <span class="footer-title">Nuestra red</span>
+            <ul class="footer-nav-list">
+              <li>
+                <a
+                  href="https://www.redsalud.cl/nuestra-red/clinicas"
+                  class="footer-link"
+                  target="_blank"
+                  >Clínicas</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.redsalud.cl/nuestra-red/centros-medicos"
+                  class="footer-link"
+                  target="_blank"
+                  >Centros médicos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.redsalud.cl/nuestra-red/clinicas-dentales"
+                  class="footer-link"
+                  target="_blank"
+                  >Clínicas dentales</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.redsalud.cl/servicios/laboratorios"
+                  class="footer-link"
+                  target="_blank"
+                  >Laboratorios</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <span class="footer-title">Acerca de este sitio</span>
+            <ul class="footer-nav-list">
+              <li>
+                <a
+                  href="https://www.redsalud.cl/assets/media/tyc-pagina-web.pdf"
+                  class="footer-link"
+                  target="_blank"
+                  >Términos y condiciones</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.redsalud.cl/acerca-de-redsalud/noticias"
+                  class="footer-link"
+                  target="_blank"
+                  >Noticias</a
+                >
+              </li>
+            </ul>
+
+            <span class="footer-title block mt-4">
+              <a
+                href="https://calidad.redsalud.cl/reclamos"
+                class="footer-link uppercase"
+                target="_blank"
+                >Sugerencias y reclamos</a
+              >
+            </span>
+          </div>
         </div>
 
-        <img
-          src="assets/images/redsalud-white-logo.svg"
-          alt="RedSalud"
-          class="h-10 opacity-90"
-          loading="lazy"
-          decoding="async"
-        />
+        <div class="mt-12 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div class="flex items-center gap-3 text-lg font-light">
+            <img src="assets/icons/phone.svg" alt="Teléfono" class="w-8 h-8" />
+            <span>600 718 6000</span>
+          </div>
+
+          <div class="flex gap-4">
+            <a href="https://web.facebook.com/redsaludcchc" target="_blank" aria-label="Facebook">
+              <img src="assets/icons/facebook.svg" alt="Facebook" class="w-8" />
+            </a>
+            <a href="https://x.com/RedSaludCChC" target="_blank" aria-label="X">
+              <img src="assets/icons/x.svg" alt="X" class="w-8" />
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCa5aDPzUCloGoKYT3rRyDmw"
+              target="_blank"
+              aria-label="YouTube"
+            >
+              <img src="assets/icons/youtube.svg" alt="YouTube" class="w-8" />
+            </a>
+            <a href="https://www.instagram.com/redsaludcchc" target="_blank" aria-label="Instagram">
+              <img src="assets/icons/instagram.svg" alt="Instagram" class="w-8" />
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
